@@ -1,0 +1,3 @@
+@echo off
+cd /d "%~dp0"
+xcopy E:\rover-self-work\php\CodeIgniter  /Y /E /I /K /O
