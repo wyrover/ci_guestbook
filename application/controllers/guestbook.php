@@ -20,7 +20,9 @@ class Guestbook extends CI_Controller {
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index() {
+        $this->load->driver('cache');
         $this->load->model('Guestbook_model');
+        $key = 'testmckey23';
 		$data = array();
 		$data["posted"] = false;
 		if( $this->input->post("submit") ) {
@@ -31,10 +33,27 @@ class Guestbook extends CI_Controller {
 			);
 			if( $this->Guestbook_model->insert( $data ) ) {
 				$data["posted"] = true;
+
+                $data["entries"] = $this->Guestbook_model->view();
+                $this->cache->memcached->save($key, $data["entries"], 60);
 			}
-		}
-		$data["entries"] = $this->Guestbook_model->view();
-		$this->load->view("guestbook.php", $data);
+		}       
+        
+
+        if ($this->cache->memcached->is_supported()) {
+            
+            $data["entries"] =  $this->cache->memcached->get($key);
+            //var_dump($data["entries"]);
+            if (!is_array($data["entries"])) {
+                $data["entries"] = $this->Guestbook_model->view();
+                $this->cache->memcached->save($key, $data["entries"], 60);
+            }   
+    
+        }
+
+        
+		$this->load->view("guestbook.php", $data); 
+        
 	}
 
     
