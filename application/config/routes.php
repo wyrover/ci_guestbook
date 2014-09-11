@@ -77,6 +77,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'guestbook';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+$route['manage'] = 'manage/home/index';
+$route['manage/login'] = 'manage/home/login';
+$route['manage/logout'] = 'manage/home/logout';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
