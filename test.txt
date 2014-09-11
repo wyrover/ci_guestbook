@@ -1,0 +1,50 @@
+文件夹 PATH 列表
+卷序列号为 0090-63EC
+E:.
+├─application
+│  ├─cache
+│  ├─config
+│  ├─controllers
+│  ├─core
+│  ├─helpers
+│  ├─hooks
+│  ├─language
+│  │  └─english
+│  ├─libraries
+│  ├─logs
+│  ├─models
+│  ├─third_party
+│  └─views
+│      └─errors
+│          ├─cli
+│          └─html
+├─install
+├─system
+│  ├─core
+│  │  └─compat
+│  ├─database
+│  │  └─drivers
+│  │      ├─cubrid
+│  │      ├─ibase
+│  │      ├─mssql
+│  │      ├─mysql
+│  │      ├─mysqli
+│  │      ├─oci8
+│  │      ├─odbc
+│  │      ├─pdo
+│  │      │  └─subdrivers
+│  │      ├─postgre
+│  │      ├─sqlite
+│  │      ├─sqlite3
+│  │      └─sqlsrv
+│  ├─fonts
+│  ├─helpers
+│  ├─language
+│  │  └─english
+│  └─libraries
+│      ├─Cache
+│      │  └─drivers
+│      ├─Javascript
+│      └─Session
+│          └─drivers
+└─test_files
