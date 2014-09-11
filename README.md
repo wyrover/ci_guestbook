@@ -49,8 +49,29 @@ CREATE TABLE guestbook.comments (
 
 ## 路由规划
 
+### 前台
+
 | 路由  | 功能  | 实现控制器 |
 | :------------ |:---------------|:-------------|
 | /home/index   | 主页 | Home |
 | /home/signup  | 注册| Home |
 | /home/login | 登录| Home |
+
+
+### 后台
+
+| 路由  | 功能  | 实现控制器 |
+| :------------ |:---------------|:-------------|
+| /manage/index   | 主页 | manage/home.php |
+| /manage/login  | 登录| manage/home.php |
+| /manage/logout | 注销| manage/home.php |
+| /manage/system | 系统信息 | manage/home.php |
+| /manage/config | 配置 | manage/home.php |
+| /manage/user   | 用户列表 | manage/user.php |
+| /manage/user/add | 用户添加 | manage/user.php |
+| /manage/user/delete | 用户删除 | manage/user.php |
+| /manage/user/edit   | 用户编辑 | manage/user.php |
+| /manage/article   | 文章列表 | manage/article.php |
+| /manage/article/add | 文章添加 | manage/article.php |
+| /manage/article/delete | 文章删除 | manage/article.php |
+| /manage/article/edit  | 文章编辑 | manage/article.php |
