@@ -56,7 +56,7 @@ CREATE TABLE guestbook.comments (
 | /home/index   | 主页 | home.php |
 | /home/signup  | 注册| home.php |
 | /home/login | 登录| home.php |
-| /article    | 资讯列表 | article.php |
+| /article    | 资讯列表(日刊) | article.php |
 | /article/category/news | 资讯列表（带参数) | article.php |
 | /group       | 小组列表 | group.php |
 | /group/1   (/group/index/1)    | 小组内容 | group.php |
@@ -70,8 +70,10 @@ CREATE TABLE guestbook.comments (
 | /course/explore | 课程列表 | course.php |
 | /course/explore/userguide | 课程列表（带参数） | course.php |
 | /teacher      | 讲师 | teacher.php |
-| /page/aboutus | 关于我们 | 生成页面 |
 | /search?q=test | 搜索 | search.php |
+| /page/lpenter | 学习路线 | 生成页面 |
+| /page/aboutus | 关于我们 | 生成页面 |
+| /page/faq     | 常见问题 | 生成页面 |
 
 ### 后台
 
