@@ -53,10 +53,25 @@ CREATE TABLE guestbook.comments (
 
 | 路由  | 功能  | 实现控制器 |
 | :------------ |:---------------|:-------------|
-| /home/index   | 主页 | Home |
-| /home/signup  | 注册| Home |
-| /home/login | 登录| Home |
-
+| /home/index   | 主页 | home.php |
+| /home/signup  | 注册| home.php |
+| /home/login | 登录| home.php |
+| /article    | 资讯列表 | article.php |
+| /article/category/news | 资讯列表（带参数) | article.php |
+| /group       | 小组列表 | group.php |
+| /group/1   (/group/index/1)    | 小组内容 | group.php |
+| /group/member/1 | 小组成员列表 | group.php |
+| /user/1         | 用户profile | user.php |
+| /user/1/teach   | 在教课程 | user.php |
+| /user/1/learn   | 在学课程 | user.php |
+| /user/1/favorited | 收藏的课程 | user.php |
+| /user/1/group |   加入的小组 | user.php |
+| /user/1/following | 关注/粉丝 | user.php |
+| /course/explore | 课程列表 | course.php |
+| /course/explore/userguide | 课程列表（带参数） | course.php |
+| /teacher      | 讲师 | teacher.php |
+| /page/aboutus | 关于我们 | 生成页面 |
+| /search?q=test | 搜索 | search.php |
 
 ### 后台
 

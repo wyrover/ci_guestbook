@@ -14,7 +14,7 @@ class Home extends CI_Controller {
         echo 'manage/home/logout';
     }
     /**
-     *  获取系统信息
+     * 获取系统信息
      */
     public function system() {
         $db_timedf = '8';
