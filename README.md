@@ -63,7 +63,7 @@ guestbook
 
 ## 创建数据表
 
-'''
+```
 
 CREATE TABLE guestbook.comments (
 comment_id INT( 11 ) NULL AUTO_INCREMENT ,
@@ -73,4 +73,4 @@ comment TEXT NOT NULL ,
 PRIMARY KEY ( comment_id )
 ) ENGINE = MYISAM;
 
-'''
+```
