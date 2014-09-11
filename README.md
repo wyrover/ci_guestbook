@@ -29,7 +29,6 @@ ci_guestbook
 └─test_files
 ```
 
-
 ## 创建数据库
 
 guestbook
@@ -47,3 +46,11 @@ CREATE TABLE guestbook.comments (
 ) ENGINE = MYISAM;
 
 ```
+
+## 路由规划
+
+| 路由  | 功能  | 实现控制器 |
+| :------------ |:---------------|:-------------|
+| /home/index   | 主页 | Home |
+| /home/signup  | 注册| Home |
+| /home/login | 登录| Home |
