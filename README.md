@@ -63,7 +63,7 @@ guestbook
 
 ## 创建数据表
 
-```
+```sql
 
 CREATE TABLE guestbook.comments (
     comment_id INT( 11 ) NULL AUTO_INCREMENT ,
